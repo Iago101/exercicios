@@ -7,17 +7,18 @@
     <title>Exercício 9</title>
     <script>
         var primo = 0;
+        var i = 2;
 
-        //while(primo <= 1001){
-        //    var i=2;
+        while(primo < 1001){
 
-        //    if(verificarPrimo(i)){
-        //        console.log(i);
-        //    }else if(primo==1001){
-        //        console.log(i);
-        //    }
-        //    i++
-        //}
+           if(verificarPrimo(i)){
+               primo++;
+           }
+           if(primo==1001){
+               alert('O milésimo primeiro numero primo é o: '+i);
+           }
+            i++;
+        }
         
         function verificarPrimo(num) {
             for (var divisor = 2; divisor < num; divisor++) 

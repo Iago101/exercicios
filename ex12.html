@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 12</title>
+    <script>
+        function inverter(){
+            var texto = document.getElementById('text').value;
+            var reverso = texto.split("").reverse().join("");
+            document.getElementById('result').innerHTML= reverso;
+        }
+    </script>
+</head>
+<body>
+    <input type="text" id="text" name="text"> <br>
+    <input type="button" id="button" name="button" value="Inverter" onclick="inverter()"> <br>
+    <div id="result">
+
+    </div>
+</body>
+</html>
